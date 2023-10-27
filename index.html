@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setName() {
+            const nameField = document.getElementById("username");
+            const name = nameField.value;
+            const title = document.getElementById("profile-link")
+            title.innerText = name + " Profile"
+        }
+        function setImage() {
+            const profileImage = document.getElementById("profile-URL");
+            const imageURL = profileImage.value;
+            const picture = document.getElementById("profile-Image")
+            picture.style.backgroundImage = "url("+imageURL+")"
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="profile-Image" class="parent">
+            <div class="child"></div>
+        </div>
+        <a id="profile-link" class="row" href="https://www.facebook.com/sangchai.rojtanikkul/" target="_blank">Sangchai Rojtanikkul</a>
+        <div class="row">
+            <p>set profile picture</p>
+            <input id="username" type="text" name="" id="">
+            <button onclick="setName()">set</button>
+        </div>
+        <div class="row">
+            <p>set the profile image URL</p>
+            <input id="profile-URL" type="text" name="" id="">
+            <button onclick="setImage()">set</button>
+        </div>
+        <div class="gallery">
+            <div id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-row" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>

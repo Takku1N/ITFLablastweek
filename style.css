@@ -1,0 +1,131 @@
+body {
+    margin: 0   ;
+    background-image: url(https://i.pinimg.com/originals/3c/7a/fc/3c7afc1b68c0f8cc367dd9d0f1f383de.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 1024px;
+    min-height: 130vh;
+    border: 2px black solid;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+p {
+    margin: 0;
+}
+
+.parent {
+    position: relative;
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*);
+    background-size: cover;
+    border-radius: 9999px;
+    background-position: center;
+}
+
+.child {
+    position: absolute;
+        top: 70%;
+        left: 70%;
+    background-color: blue;
+    background-image: url(https://scontent.fbkk6-2.fna.fbcdn.net/v/t39.30808-6/297467626_532533321956122_628873073735890225_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHp0AXkYvebGKKxthaHZBqTvSrlaZ4vOdq9KuVpni852lga47ao-Vh6Sagg8HJ6qAF2GEvy5bybhIKls5DaH2g2&_nc_ohc=IOLryUyFc_4AX92ox5O&_nc_ht=scontent.fbkk6-2.fna&oh=00_AfCGQU-Dz6D8zCvnm6yirsAB7aHsBUlCN7c-ePSSaxGpWQ&oe=653F6A85);
+    width: 75px;
+    height: 75px;
+    border-radius: 9999px
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+        gap: 0px 10px;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url(https://cdn.wallpapersafari.com/14/78/tRdrWh.jpg);
+}
+
+.gallery .image:nth-child(2) {
+    background-image: url(https://media.4-paws.org/5/b/4/b/5b4b5a91dd9443fa1785ee7fca66850e06dcc7f9/VIER%20PFOTEN_2019-12-13_209-2890x2000-1920x1329.jpg);
+}
+
+.gallery .image:nth-child(3) {
+    background-image: url(https://cdn.jwplayer.com/v2/media/OJGSRhSM/poster.jpg?width=720);
+}
+
+.gallery .image:nth-child(4) {
+    background-image: url(https://catamazing.com/cdn/shop/files/catshark.jpg?v=1649869148);
+}
+
+.gallery .image:nth-child(5) {
+    background-image: url(https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=2000);
+}
+
+.gallery .image:nth-child(6) {
+    background-image: url(https://cdnimpuls.com/politiko.al/media3/341428a92a575844681b990a721c8b26.jpg);
+}
+
+.gallery .image:nth-child(7) {
+    background-image: url(https://media-be.chewy.com/wp-content/uploads/2019/10/28105544/catbehavior-HERO-1024x576.jpg);
+}
+
+.gallery .image:nth-child(8) {
+    background-image: url(https://icatcare.org/app/uploads/2018/09/Scottish-fold.png);
+}
+
+.gallery .image:nth-child(9) {
+    background-image: url(https://cdn.theatlantic.com/thumbor/vDZCdxF7pRXmZIc5vpB4pFrWHKs=/559x0:2259x1700/1080x1080/media/img/mt/2017/06/shutterstock_319985324/original.jpg);
+}
+
+.gallery .image:nth-child(10) {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg);
+}
+
+.gallery .image {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+#extend-col {
+    grid-column: span 2;
+    width: 100%;
+    background-color: red;
+}
+
+#extend-row {
+    grid-row: span 2;
+    height: 100%;
+    background-color: blue;
+}
+
+#profile-link {
+    font-size: 48px;
+    color: black;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    color: blue;
+}
